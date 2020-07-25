@@ -1,0 +1,189 @@
+/* ========== RESETS ========== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ========== General Styles ========== */
+:root {
+  /* ===== main background color ===== */
+  --main-bg-color: #929aab;
+
+  /* ===== secondary color ===== */
+  --secondary-bg-color: #dadada;
+
+  /* ===== hover background color */
+  --hover-bg-color: #eeeeee;
+
+  /* ===== calculator background color ===== */
+  --calculator-bg-color: #f7f7f7;
+
+  /* ===== main color ===== */
+  --main-color: #393e46;
+
+  /* ===== secondary color ===== */
+  --secondary-color: #000000;
+
+  /* ===== body font family ===== */
+  --body-font-family: "Lato", sans-serif;
+
+  /* ===== Heading font family ===== */
+  --heading-font-family: "Zhi Mang Xing", cursive;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ========== Header ========== */
+header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.main-title {
+  color: var(--secondary-color);
+  font-family: var(--heading-font-family);
+  font-size: 6rem;
+  padding-bottom: 1rem;
+}
+
+.sub-title {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+/* ========== Calculator container ========== */
+
+.calc-container {
+  width: 50%;
+  margin: 3rem auto;
+  background-color: var(--calculator-bg-color);
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  border: 0.0625rem solid var(--main-bg-color);
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+/* ========== Input fields ========== */
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-right: 0.025rem solid var(--secondary-bg-color);
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.input-label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.input-fields input {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+#tip,
+#num-of-people {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+}
+
+.minus,
+.plus {
+  background-color: aqua;
+  width: 40%;
+  text-align: center;
+  font-weight: 700;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-color);
+  vertical-align: middle;
+  border: 0.0625rem solid var(--secondary-bg-color);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.minus:hover,
+.minus:active,
+.plus:hover,
+.plus:active {
+  background-color: var(--hover-bg-color);
+}
+
+/* ========== Output fields ========== */
+.output-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 3rem 2rem 2rem;
+  font-size: 1.5rem;
+}
+
+.output {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.output-label {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.tip-amount {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.total-amount {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.per-person-amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ========== Footer ========== */
+footer {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.copy {
+  font-size: 0.8rem;
+  padding-top: .4rem;
+}
