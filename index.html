@@ -30,7 +30,7 @@
                     <label for="bill">Bill</label>
                 </div>
                 <div class="input-field">
-                    <input type="number" name="bill" id="bill" value="24">
+                    <input class="inputs" type="number" name="bill" id="bill" value="0" step=".01">
                 </div>
 
                 <!-- **************** Tip input **************** -->
@@ -39,13 +39,13 @@
                 </div>
 
                 <div class="controls">
-                <div class="minus">
+                <div class="minus minus-tip" role="button">
                     -
                 </div>
                 <div class="input-field">
-                    <input type="number" name="tip" id="tip" value="5">
+                    <input class="inputs" type="number" name="tip" id="tip" value="5" step=".01">
                 </div>
-                <div class="plus">
+                <div class="plus plus-tip" role="button">
                     +
                 </div>
             </div>
@@ -56,13 +56,13 @@
                 </div>
 
                 <div class="controls">
-                    <div class="minus">
+                    <div class="minus minus-people" role="button">
                         -
                     </div>
                     <div class="input-field">
-                        <input type="number" name="num-of-people" id="num-of-people" value="1">
+                        <input class="inputs" type="number" name="num-of-people" id="num-of-people" value="1">
                     </div>
-                    <div class="plus">
+                    <div class="plus plus-people" role="button">
                         +
                     </div>
                 </div>
@@ -71,15 +71,15 @@
             <div class="output-fields">
                 <div class="output">
                     <p class="output-label">Tip</p>
-                    <p class="tip-amount">$1.20</p>
+                    <p class="tip-amount">$0.00</p>
                 </div>
                 <div class="output">
                     <p class="output-label">total</p>
-                    <p class="total-amount">$25.20</p>
+                    <p class="total-amount">$0.00</p>
                 </div>
                 <div class="output">
                     <p class="output-label">Per Person</p>
-                    <p class="per-person-amount">$25.20</p>
+                    <p class="per-person-amount">$0.00</p>
                 </div>
             </div>
         </div>
